@@ -9,7 +9,7 @@
     "url": "https://github.com/etherman-os/mcp-config-guard"
   },
   "publisher": "etherman-os",
-  "main": "./dist/extension.cjs",
+  "main": "./dist/extension.js",
   "categories": ["Linters", "Debuggers"],
   "keywords": ["mcp", "config", "validation", "lint", "model-context-protocol"],
   "activationEvents": [
