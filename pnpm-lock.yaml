@@ -30,8 +30,8 @@ importers:
         specifier: ^2.2.3
         version: 2.2.3
       mcp-guard-core:
-        specifier: workspace:*
-        version: link:../core
+        specifier: ^0.1.0
+        version: 0.1.1
       picocolors:
         specifier: ^1.0.0
         version: 1.1.1
@@ -80,8 +80,8 @@ importers:
         specifier: ^3.2.0
         version: 3.3.1
       mcp-guard-core:
-        specifier: workspace:*
-        version: link:../core
+        specifier: ^0.1.0
+        version: 0.1.1
     devDependencies:
       '@types/node':
         specifier: ^20.11.0
@@ -957,6 +957,9 @@ packages:
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
+
+  mcp-guard-core@0.1.1:
+    resolution: {integrity: sha512-jofalJD3ey3bexnox6lGRwFKHn0lopWYLuTrXr7U7v9YNCi7lZ6D5uPQRX6GUhA4DJq40dCnzkfXLYROOEAbLw==}
 
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
@@ -2151,6 +2154,12 @@ snapshots:
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  mcp-guard-core@0.1.1:
+    dependencies:
+      json5: 2.2.3
+      picocolors: 1.1.1
+      zod: 3.25.76
 
   merge-stream@2.0.0: {}
 
