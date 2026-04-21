@@ -1,0 +1,55 @@
+{
+  "name": "mcp-config-guard-vscode",
+  "version": "0.1.0",
+  "displayName": "MCP Config Guard",
+  "description": "Catches and fixes silent errors in MCP config files",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/etherman-os/mcp-config-guard"
+  },
+  "publisher": "etherman-os",
+  "main": "./dist/extension.cjs",
+  "categories": ["Linters", "Debuggers"],
+  "keywords": ["mcp", "config", "validation", "lint", "model-context-protocol"],
+  "activationEvents": [
+    "onLanguage:json"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "mcp-config-guard.validate",
+        "title": "MCP Config Guard: Validate"
+      }
+    ],
+    "languages": [
+      {
+        "id": "json",
+        "filenames": [
+          "claude_desktop_config.json",
+          ".mcp.json"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mcp-guard/core": "workspace:*",
+    "jsonc-parser": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  }
+}

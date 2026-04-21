@@ -1,0 +1,13 @@
+src/**
+tests/**
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+*.test.ts
+*.map
+node_modules/**
+.git/**
+.DS_Store
+coverage/**
+*.md
+!package.json
