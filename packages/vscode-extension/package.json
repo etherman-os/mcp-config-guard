@@ -1,6 +1,7 @@
 {
   "name": "mcp-config-guard-vscode",
   "version": "0.1.1",
+  "private": true,
   "displayName": "MCP Config Guard",
   "description": "Catches and fixes silent errors in MCP config files",
   "license": "MIT",
