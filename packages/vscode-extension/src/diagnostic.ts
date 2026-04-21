@@ -1,6 +1,6 @@
 import vscode from 'vscode';
 import { parseTree, findNodeAtLocation } from 'jsonc-parser';
-import type { Diagnostic as MCPDiagnostic, MCPConfig } from '@mcp-guard/core';
+import type { Diagnostic as MCPDiagnostic, MCPConfig } from 'mcp-guard-core';
 
 export function pathToRange(
   doc: vscode.TextDocument,

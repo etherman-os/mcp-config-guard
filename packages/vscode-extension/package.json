@@ -39,7 +39,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@mcp-guard/core": "workspace:*",
+    "mcp-guard-core": "workspace:*",
     "jsonc-parser": "^3.2.0"
   },
   "devDependencies": {

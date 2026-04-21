@@ -1,6 +1,6 @@
 import vscode from 'vscode';
-import { rules } from '@mcp-guard/core';
-import type { Diagnostic as MCPDiagnostic } from '@mcp-guard/core';
+import { rules } from 'mcp-guard-core';
+import type { Diagnostic as MCPDiagnostic } from 'mcp-guard-core';
 
 export function createHover(
   doc: vscode.TextDocument,

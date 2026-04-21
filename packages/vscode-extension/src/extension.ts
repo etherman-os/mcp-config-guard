@@ -4,7 +4,7 @@ import { debouncedValidate, setStatusBar, validateDocument, isMCPConfigFile, set
 import { createStatusBar } from './statusBar.js';
 import { createCodeActions } from './codeActions.js';
 import { createHover } from './hover.js';
-import { validate } from '@mcp-guard/core';
+import { validate } from 'mcp-guard-core';
 
 let statusBarItem: vscode.StatusBarItem;
 

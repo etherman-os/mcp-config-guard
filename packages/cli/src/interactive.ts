@@ -1,6 +1,6 @@
 import * as p from '@clack/prompts';
 import fs from 'fs';
-import { validate, fix, stringifyConfig, formatDiagnostics, hasErrors, fixableRuleIds } from '@mcp-guard/core';
+import { validate, fix, stringifyConfig, formatDiagnostics, hasErrors, fixableRuleIds } from 'mcp-guard-core';
 import { findAvailableConfigs } from './utils/find-configs.js';
 import pc from 'picocolors';
 
@@ -152,7 +152,7 @@ async function fixConfig(configPath: string, showConfirm = true): Promise<void> 
 async function listRulesInteractive(): Promise<void> {
   p.log.info(pc.bold('\nAvailable Rules:\n'));
 
-  const { rules } = await import('@mcp-guard/core');
+  const { rules } = await import('mcp-guard-core');
   const tableRows = rules.map((r) => ({
     ID: r.id,
     Severity: r.severity,

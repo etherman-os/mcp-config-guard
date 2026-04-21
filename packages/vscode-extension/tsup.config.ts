@@ -10,5 +10,5 @@ export default defineConfig({
   platform: 'node',
   target: 'node18',
   external: ['vscode'],
-  noExternal: ['@mcp-guard/core', 'jsonc-parser'],
+  noExternal: ['mcp-guard-core', 'jsonc-parser'],
 });

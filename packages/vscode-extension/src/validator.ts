@@ -1,6 +1,6 @@
 import vscode from 'vscode';
 import path from 'path';
-import { validate } from '@mcp-guard/core';
+import { validate } from 'mcp-guard-core';
 import { createDiagnostic } from './diagnostic.js';
 import { updateStatusBar } from './statusBar.js';
 

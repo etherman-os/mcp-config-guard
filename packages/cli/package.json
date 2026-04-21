@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@clack/prompts": "^0.7.0",
-    "@mcp-guard/core": "workspace:*",
+    "mcp-guard-core": "workspace:*",
     "commander": "^11.1.0",
     "json5": "^2.2.3",
     "picocolors": "^1.0.0"

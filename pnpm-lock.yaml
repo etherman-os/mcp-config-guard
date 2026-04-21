@@ -23,15 +23,15 @@ importers:
       '@clack/prompts':
         specifier: ^0.7.0
         version: 0.7.0
-      '@mcp-guard/core':
-        specifier: workspace:*
-        version: link:../core
       commander:
         specifier: ^11.1.0
         version: 11.1.0
       json5:
         specifier: ^2.2.3
         version: 2.2.3
+      mcp-guard-core:
+        specifier: workspace:*
+        version: link:../core
       picocolors:
         specifier: ^1.0.0
         version: 1.1.1
@@ -76,12 +76,12 @@ importers:
 
   packages/vscode-extension:
     dependencies:
-      '@mcp-guard/core':
-        specifier: workspace:*
-        version: link:../core
       jsonc-parser:
         specifier: ^3.2.0
         version: 3.3.1
+      mcp-guard-core:
+        specifier: workspace:*
+        version: link:../core
     devDependencies:
       '@types/node':
         specifier: ^20.11.0

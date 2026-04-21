@@ -1,5 +1,5 @@
 import vscode from 'vscode';
-import type { Diagnostic } from '@mcp-guard/core';
+import type { Diagnostic } from 'mcp-guard-core';
 
 export function createStatusBar(
   context: vscode.ExtensionContext

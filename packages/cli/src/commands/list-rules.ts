@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { rules } from '@mcp-guard/core';
+import { rules } from 'mcp-guard-core';
 
 export function createListRulesCommand(program: Command): void {
   program

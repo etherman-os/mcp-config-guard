@@ -1,7 +1,7 @@
 import vscode from 'vscode';
 import { parseTree, findNodeAtLocation } from 'jsonc-parser';
-import { rules, stringifyConfig, parseConfig } from '@mcp-guard/core';
-import type { MCPConfig, Rule } from '@mcp-guard/core';
+import { rules, stringifyConfig, parseConfig } from 'mcp-guard-core';
+import type { MCPConfig, Rule } from 'mcp-guard-core';
 
 interface DiagnosticData {
   path: string;

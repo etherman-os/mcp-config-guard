@@ -1,6 +1,6 @@
 import { Command } from 'commander';
 import fs from 'fs';
-import { validate, fix, stringifyConfig, formatDiagnostics, hasErrors, fixableRuleIds } from '@mcp-guard/core';
+import { validate, fix, stringifyConfig, formatDiagnostics, hasErrors, fixableRuleIds } from 'mcp-guard-core';
 import { detectDefaultConfigPath } from '../utils/detect-platform.js';
 
 interface FixOptions {
