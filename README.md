@@ -122,17 +122,6 @@ jobs:
         run: npx mcp-config-guard validate --format json --strict
 ```
 
-## VS Code Extension
-
-MCP Config Guard also works inside VS Code. When you open a config file:
-
-- Errors are underlined in red
-- Hover shows an explanation
-- "Fix" button provides automatic fixing
-- Status bar in the bottom right corner (✔/✗/⚠)
-
-**Installation:** Search for "MCP Config Guard" on the VS Code Marketplace.
-
 ## Development
 
 ```bash
