@@ -1,6 +1,6 @@
 {
   "name": "mcp-config-guard-vscode",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "MCP Config Guard",
   "description": "Catches and fixes silent errors in MCP config files",
   "license": "MIT",
@@ -39,7 +39,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "mcp-guard-core": "workspace:*",
+    "mcp-guard-core": "^0.1.0",
     "jsonc-parser": "^3.2.0"
   },
   "devDependencies": {
