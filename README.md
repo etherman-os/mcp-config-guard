@@ -32,7 +32,7 @@ $ mcp-guard validate ./claude_desktop_config.json
 ⚠ WARNING [mcpServers.filesystem.command]
    Command not found: npx -y @modelcontextprotocol/server-filesystem /tmp. It must be in PATH.
 
-✗ 1 error, 1 warning, 1 info
+✗ 1 error(s), 1 warning(s), 1 info
 ```
 
 ## Installation
@@ -47,7 +47,30 @@ Or use with `npx`:
 npx -p mcp-config-guard mcp-guard validate ./config.json
 ```
 
+## Quick Start
+
+The easiest way to use MCP Config Guard is **interactive mode**. Just run:
+
+```bash
+mcp-guard
+```
+
+This opens a guided menu where you can:
+- Pick which config file to check
+- Validate or fix it
+- See the results
+
+No need to remember file paths or commands.
+
 ## Usage
+
+### Interactive Mode (Recommended)
+
+```bash
+mcp-guard
+```
+
+Opens a menu to select your config file and choose an action.
 
 ### Validate
 
@@ -84,6 +107,16 @@ mcp-guard list-rules
 
 - `0` — No errors
 - `1` — Errors or warnings found (with `--strict`)
+
+## Supported Config Files
+
+MCP Config Guard automatically detects config files for:
+
+- **Claude Desktop** — `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Cursor** — `~/.cursor/mcp.json` (global) and `.cursor/mcp.json` (project)
+- **Claude Code** — `~/.claude/mcp.json` (global) and `.mcp.json` (project)
+
+If you run `mcp-guard` without a file path, it checks these locations automatically.
 
 ## Rules
 
